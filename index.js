@@ -95,9 +95,24 @@ var greatestDecrease=0;
 var sortArr=[];
 
 //* The total number of months included in the dataset.
-
+totalMonths= finances.length
 //* The net total amount of Profit/Losses over the entire period.
+for (let i = 0; i < totalMonths; i++) {
+
+  totalProfitLoss = totalProfitLoss + finances[i][1];
+}
 //* The average of the **changes** in Profit/Losses over the entire period.
 //* The greatest increase in Profit/Losses (date and amount) over the entire period.
 
 //* The greatest decrease in Profit/Losses (date and amount) over the entire period.
+
+
+
+//output
+console.log(" Financial Analysis"+
+" \n ------------------"+
+"\nTotal Months: " + totalMonths+
+"\nTotal: $" + totalProfitLoss+
+"\nAverage Change: " + averageChanges+
+"\nGreatest Increase in Profits/Losses: " +greatestIncrease+
+"\nGreatest Decrease in Profits/Losses: "+ greatestDecrease);
