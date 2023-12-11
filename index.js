@@ -86,3 +86,18 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+
+var totalMonths=0;
+var totalProfitLoss=0;
+var averageChanges=0;
+var greatestIncrease=0;
+var greatestDecrease=0;
+var sortArr=[];
+
+//* The total number of months included in the dataset.
+
+//* The net total amount of Profit/Losses over the entire period.
+//* The average of the **changes** in Profit/Losses over the entire period.
+//* The greatest increase in Profit/Losses (date and amount) over the entire period.
+
+//* The greatest decrease in Profit/Losses (date and amount) over the entire period.
