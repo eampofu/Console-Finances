@@ -89,6 +89,7 @@ var finances = [
 
 var totalMonths=0;
 var totalProfitLoss=0;
+var runningTotal = 0;
 var averageChanges=0;
 var greatestIncrease=0;
 var greatestDecrease=0;
@@ -102,6 +103,16 @@ for (let i = 0; i < totalMonths; i++) {
   totalProfitLoss = totalProfitLoss + finances[i][1];
 }
 //* The average of the **changes** in Profit/Losses over the entire period.
+for (var i = 0; i < totalMonths - 1; i++) {
+  
+  
+  runningTotal = runningTotal + (finances[i + 1][1] - finances[i][1]);
+  //populating array which will be used for getting the greatest increase and decrease  P/L 
+  sortArr.push([finances[i + 1][0], finances[i + 1][1] - finances[i][1]]);
+
+}
+averageChanges= (runningTotal / (totalMonths - 1)).toFixed(2);
+
 //* The greatest increase in Profit/Losses (date and amount) over the entire period.
 
 //* The greatest decrease in Profit/Losses (date and amount) over the entire period.
