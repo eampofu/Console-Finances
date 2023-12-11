@@ -112,11 +112,13 @@ for (var i = 0; i < totalMonths - 1; i++) {
 
 }
 averageChanges= (runningTotal / (totalMonths - 1)).toFixed(2);
-
+sortArr.sort((a,b)=>b[1]-a[1]);// sorting the array from the largest to the smallest of the total for running total for each month
 //* The greatest increase in Profit/Losses (date and amount) over the entire period.
-
+//get the element at the top of the array 
+greatestIncrease= sortArr[0][0] +" $("+sortArr[0][1]+")"
 //* The greatest decrease in Profit/Losses (date and amount) over the entire period.
-
+//get the element at the bottom of the array (the smallest)
+greatestDecrease= sortArr[sortArr.length-1][0]+" $("+sortArr[sortArr.length-1][1]+")"
 
 
 //output
