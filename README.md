@@ -15,7 +15,7 @@ Website link: https://eampofu.github.io/Console-Finances/
 
 
 To view open up the console.
-![alt text](./images/output.jpg)
+![alt text](images/output.jpg)
 
-![alt-text](./images/published-output.jpg)
+![alt-text](images/published-output.jpg)
 
